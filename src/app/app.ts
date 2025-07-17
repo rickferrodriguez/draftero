@@ -8,8 +8,8 @@ import { RouterOutlet } from "@angular/router";
     styleUrl: "./app.css",
 })
 export class AppComponent {
-    protected title = "Draftero";
-    content = "Esto es un contenido de este draftero";
+    protected title = "Richard Flow";
+    content = "Esta es la lista de campeones";
     list = [
         {
             title: "Explore the Documentos",

@@ -1,6 +1,19 @@
 # Draftero
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+Esto es un sistema de picks y bans de campeones de League of Legends, pero
+también va a servir con un nuevo sistema llamado **fearless draft**, cuando es
+seleccionado un campeón este ya no puede aparecer en la lista de disponibles.
+
+## APIs
+
+Toda la información de las APIs se encuentran en [ddragon](https://developer.riotgames.com/docs/lol#data-dragon)
+
+**_Importante_**: Antes de llamar la lista de campeones se debe obtener el
+número de la última versión del juego, en el caso de que salga un nuevo campeón.
+Esta versión se encuentra en la posición cero de la lista.
+
+- [version list](https://ddragon.leagueoflegends.com/api/versions.json)
+- https://ddragon.legueoflegends.com/cdn/**version**/dta/en_US/champion.json
 
 ## Development server
 

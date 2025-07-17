@@ -1,0 +1,8 @@
+.pill {
+    background-color: red;
+    width: min-content;
+}
+.pill-group {
+    display: grid;
+    gap: 1rem;
+}

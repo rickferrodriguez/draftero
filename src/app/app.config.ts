@@ -10,12 +10,14 @@ import {
     provideClientHydration,
     withEventReplay,
 } from "@angular/platform-browser";
+import { provideHttpClient, withFetch } from "@angular/common/http";
 
 export const appConfig: ApplicationConfig = {
     providers: [
         provideBrowserGlobalErrorListeners(),
         provideZoneChangeDetection({ eventCoalescing: true }),
         provideRouter(routes),
+        provideHttpClient(withFetch()),
         provideClientHydration(withEventReplay()),
     ],
 };
