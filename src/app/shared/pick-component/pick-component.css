@@ -1,0 +1,26 @@
+button:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 5rem;
+    aspect-ratio: 3/4;
+    border-radius: 0.5rem;
+}
+
+section {
+    display: grid;
+    gap: 0.5rem;
+    place-content: center;
+}
+
+img {
+    width: 4rem;
+    object-fit: contain;
+    aspect-ratio: 3/4;
+}
+
+input {
+    object-fit: contain;
+    width: 8rem;
+}

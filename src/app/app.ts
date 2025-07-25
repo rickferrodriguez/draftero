@@ -1,39 +1,11 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
+import { PickComponent } from "./shared/pick-component/pick-component";
 
 @Component({
     selector: "app-root",
-    imports: [RouterOutlet],
+    imports: [RouterOutlet, PickComponent],
     templateUrl: "./app.html",
     styleUrl: "./app.css",
 })
-export class AppComponent {
-    protected title = "Richard Flow";
-    content = "Esta es la lista de campeones";
-    list = [
-        {
-            title: "Explore the Documentos",
-            link: "https://angular.dev",
-        },
-        {
-            title: "Learn with Tutorials",
-            link: "https://angular.dev/tutorials",
-        },
-        {
-            title: "Prompt and best practices for AI",
-            link: "https://angular.dev/ai/develop-with-ai",
-        },
-        {
-            title: "CLI Docs",
-            link: "https://angular.dev/tools/cli",
-        },
-        {
-            title: "Angular Language Service",
-            link: "https://angular.dev/tools/language-service",
-        },
-        {
-            title: "Angular DevTools",
-            link: "https://angular.dev/tools/devtools",
-        },
-    ];
-}
+export class AppComponent {}
